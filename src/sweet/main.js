@@ -62,7 +62,7 @@ client.on("message", async (message) => {
             `_Megafon Sesi: LSPD! aracını durdur! HEY HEY, NE YAPIYORSUN? BİZİ ÖLDÜRECEKSİN._`,
             `Hey, hey! Big Smoke, it's me, Carl! Chill! Chill!`,
         ];
-        message.channel.send(messages[Math.floor(Math.random() * 7)]);
+        message.channel.send(messages[Math.floor(Math.random() * (messages.length + 1))]);
     }
 
     if (message.content.toLowerCase() === "grove street kraldır!" || message.content.toLowerCase() === "grove street kraldır") {
